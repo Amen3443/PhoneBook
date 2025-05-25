@@ -57,6 +57,8 @@
             this.Updatelink = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.UPDATEpanel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Backbutton = new System.Windows.Forms.Button();
             this.Enterbutton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.Updatepanel = new System.Windows.Forms.Panel();
@@ -72,9 +74,7 @@
             this.FirstNameEnter = new System.Windows.Forms.TextBox();
             this.Type_First_Name = new System.Windows.Forms.Label();
             this.SearchcomboBox = new System.Windows.Forms.ComboBox();
-            this.Backbutton = new System.Windows.Forms.Button();
             this.PhoneErrorlabel = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.UPDATEpanel1.SuspendLayout();
@@ -331,6 +331,27 @@
             this.UPDATEpanel1.Size = new System.Drawing.Size(813, 250);
             this.UPDATEpanel1.TabIndex = 21;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.IndianRed;
+            this.label7.Location = new System.Drawing.Point(96, 228);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(150, 16);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "* Only Numbers allowed";
+            // 
+            // Backbutton
+            // 
+            this.Backbutton.Location = new System.Drawing.Point(665, 84);
+            this.Backbutton.Name = "Backbutton";
+            this.Backbutton.Size = new System.Drawing.Size(123, 23);
+            this.Backbutton.TabIndex = 29;
+            this.Backbutton.Text = "Back";
+            this.Backbutton.UseVisualStyleBackColor = true;
+            this.Backbutton.Click += new System.EventHandler(this.Backbutton_Click);
+            // 
             // Enterbutton
             // 
             this.Enterbutton.Location = new System.Drawing.Point(665, 59);
@@ -433,12 +454,13 @@
             // 
             // Updatebutton
             // 
+            this.Updatebutton.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.Updatebutton.Location = new System.Drawing.Point(665, 122);
             this.Updatebutton.Name = "Updatebutton";
             this.Updatebutton.Size = new System.Drawing.Size(133, 23);
             this.Updatebutton.TabIndex = 24;
             this.Updatebutton.Text = "Update";
-            this.Updatebutton.UseVisualStyleBackColor = true;
+            this.Updatebutton.UseVisualStyleBackColor = false;
             this.Updatebutton.Click += new System.EventHandler(this.Updatebutton_Click);
             // 
             // FirstNameEnter
@@ -468,16 +490,6 @@
             this.SearchcomboBox.Name = "SearchcomboBox";
             this.SearchcomboBox.Size = new System.Drawing.Size(101, 21);
             this.SearchcomboBox.TabIndex = 22;
-                       // 
-            // Backbutton
-            // 
-            this.Backbutton.Location = new System.Drawing.Point(665, 84);
-            this.Backbutton.Name = "Backbutton";
-            this.Backbutton.Size = new System.Drawing.Size(123, 23);
-            this.Backbutton.TabIndex = 29;
-            this.Backbutton.Text = "Back";
-            this.Backbutton.UseVisualStyleBackColor = true;
-            this.Backbutton.Click += new System.EventHandler(this.Backbutton_Click);
             // 
             // PhoneErrorlabel
             // 
@@ -489,17 +501,6 @@
             this.PhoneErrorlabel.Size = new System.Drawing.Size(150, 16);
             this.PhoneErrorlabel.TabIndex = 23;
             this.PhoneErrorlabel.Text = "* Only Numbers allowed";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.IndianRed;
-            this.label7.Location = new System.Drawing.Point(96, 228);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(150, 16);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "* Only Numbers allowed";
             // 
             // Form1
             // 
